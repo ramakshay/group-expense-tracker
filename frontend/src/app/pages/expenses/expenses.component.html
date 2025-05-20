@@ -1,1 +1,6 @@
-<p>expenses works!</p>
+<p>expenses</p>
+<ul>
+    <li *ngFor="let exp of expenses">
+        {{exp.name}} - ${{exp.amount}} on {{exp.date | date}}
+    </li>
+</ul>
